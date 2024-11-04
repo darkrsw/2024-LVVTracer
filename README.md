@@ -4,7 +4,7 @@
 Your submission must satisfy the following requirements:
 
 * R1. Shall initialize your assignment repository from the link posted by the Slack channel.
-* R2. Write your `LVVTracer.py` in the repository.
+* R2. Write your `LVVTracer.py` in the repository (based on the template given in this repository).
 * R3. Test your `LVVTracer.py` by using `pytest`.
 * R4. `LVVTracer` class should be defined in the `LVVTracer.py`
 * R5. The above class is tested as:
