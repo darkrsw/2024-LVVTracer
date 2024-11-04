@@ -1,19 +1,16 @@
-class LVVTracer():
-    def __init__(self, target: str):
-        pass
+from types import FrameType, TracebackType
+from typing import Any, Dict, List, Set, Optional, Union, Tuple, Type
 
+class LVVTracer():
+    def __init__(self, target_func: str):
+        self.target_func = target_func
 
     def __enter__(self) -> Any:
-        pass
+        return self
 
     def __exit__(self, exc_tp: Type, exc_value: BaseException,
                  exc_traceback: TracebackType) -> Optional[bool]:
-        # Note: we must return a non-True value here,
-        # such that we re-raise all exceptions
-        if self.is_internal_error(exc_tp, exc_value, exc_traceback):
-            return False  # internal error
-        else:
-            return None  # all ok
-
-    def getLVVmap() -> dict:
         return None
+
+    def getLVVmap(self) -> dict:
+        return {}
